@@ -1,0 +1,21 @@
+# Environments
+venv/
+.env
+
+# Cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Misc
+.DS_Store

@@ -1,0 +1,643 @@
+body {
+    all: unset;
+    display: flex;
+    background-color: #0b0b03;
+    /* border: 2px solid rgb(255, 0, 0); */
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+/*  */
+.logo img {
+    width: 130px;
+}
+
+hr {
+    border: 0;
+    /* Remove default styling */
+    border-top: 1px solid #00000026;
+    /* Custom thickness, style, and color */
+}
+
+.side {
+    width: 231px;
+    /* width: 0px; */
+    border-right: 1px solid #ffffff13;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 7px 15px;
+    transition: 100ms;
+    /* visibility: hidden; */
+}
+
+
+
+
+.upper {
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    /* margin: 15px 3px 15px 15px; */
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ffffff4e;
+    justify-self: left;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+#upper_buttons {
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid rgb(0, 76, 255); */
+    padding-left: -10px;
+    /* position: absolute; */
+    left: 190px;
+
+}
+
+#search_button {
+    /* border: 2px solid rgb(255, 0, 0); */
+    margin: 9px;
+    align-self: center;
+
+}
+
+
+
+#side_button {
+    /* border: 2px solid rgb(255, 0, 0); */
+    margin: 9px;
+    align-self: center;
+    /* position: ; */
+}
+
+.button_con {
+    /* border: 2px solid rgb(0, 255, 187); */
+    border-radius: 80px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms;
+}
+
+.button_con:hover {
+    background-color: #f5f5f51e;
+}
+
+#new_chat {
+    all: unset;
+    /* margin: ; */
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    /* border: 2px solid rgb(255, 0, 0);  */
+    display: flex;
+    margin: 22px 0 0 0;
+    padding: 9px 9px 11px 9px;
+    border: 1px solid #ffffff0d;
+    /* border-bottom: 1px solid #fefefe0d; */
+
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff29;
+}
+
+#new_chat_img {
+    margin-right: 5px;
+}
+
+/* #new_chat:hover{
+    color: 3fb299;
+} */
+
+.chats {
+    /* border: 2px solid rgb(255, 0, 0); */
+    flex: 1;
+    /* height: 100px; */
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    scrollbar-width: none;
+    mask-image: linear-gradient(to bottom, transparent 3%, black 10%, black 80%, transparent 100%);
+}
+
+
+.when {
+    color: #ffffff82;
+    font-size: 12px;
+    padding: 24px 12px 0px 12px;
+}
+
+.session_name {
+    color: #818181;
+    font-size: 14px;
+    padding: 11px 7px;
+    margin: 3px 0;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+}
+
+
+.session_name:hover {
+    background-color: #ffffff17;
+
+}
+
+#setting-toggle {
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* height: 50px; */
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#setting-toggle:hover {
+    background-color: #f5f5f510;
+
+}
+
+#upper_nav {
+    background-color: #161616;
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 100px;
+    border: 1px solid #ffffff14;
+    margin: 10px;
+    transition: 200ms;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.main {
+    flex: 1;
+    /* border: 2px solid #151517; */
+    background-color: #151517;
+    display: flex;
+
+
+}
+
+pre {
+    all: unset;
+}
+
+
+
+#message_container {
+    /* border: 1px solid #5c24b5; */
+    background-color: #151515;
+    width: 58vw;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 25px;
+    /* justify-content: space-between; */
+    border: 1px solid #fefefe0d;
+
+    height: auto;
+}
+
+#get_input {
+    all: unset;
+    /* border: 1px solid #5c24b5; */
+    padding: 0px 0px 0px 0px;
+    /* overflow-wrap: break-word; */
+    /* word-break: break-all;  */
+    color: #ffffff;
+    font-size: 16px;
+    scrollbar-width: none;
+    margin: 10px 15px 0 15px;
+    box-sizing: border-box;
+    height: 24px;
+    /* Starting line height */
+    max-height: 180px;
+    /* Caps growth so it doesn't take over screen */
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    /* Respects breaks and forces standard wraps */
+    overflow-wrap: break-word;
+    /* Breaks massive unbroken words down to the next line */
+    word-break: break-word;
+
+}
+
+#get_input_con {
+    /* height: 50px; */
+    height: auto;
+    min-height: 40px;
+    /* border: 1px solid #24b530; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 0;
+}
+
+#functions_con {
+    color: #ffffffad;
+    /* border: 1px solid #5c24b5; */
+
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#geepthink_funtion_button,
+#search_funtion_button,
+#create_image_funtion_button {
+    border: 1px solid #ffffff4a;
+    display: flex;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 10px;
+    margin: 0 5px 0px 5px;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+
+#geepthink_funtion_button svg,
+#search_funtion_button svg {
+    margin: 0 4px 0 0;
+}
+
+#geepthink_funtion_button:hover,
+#search_funtion_button:hover,
+#create_image_funtion_button:hover {
+    color: #ffffff;
+    /* border: 1px solid #3fb299; */
+}
+
+#banana_emoji {
+    margin: 0 4px 0 0;
+}
+
+
+
+
+.left_side1 {
+    align-self: center;
+    display: flex;
+    /* border: 1px solid #ffffff27; */
+
+}
+
+.right_side1 {
+    display: flex;
+    align-self: center;
+    /* border: 1px solid #ffffff27; */
+
+}
+
+#file_funtion_button,
+#send_input {
+    border: 1px solid #ffffff27;
+    display: flex;
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+
+/* #send_input {
+    background-color: #5686fe;
+} */
+
+#file_funtion_button:hover {
+    color: #ffffff;
+}
+
+#send_input:hover {
+    background-color: #000000;
+}
+
+#chatbox {
+    flex: 1;
+    /* border: 1px solid #2424b5; */
+
+    display: flex;
+    flex-direction: column;
+
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+#message_box {
+    display: flex;
+    /* border: 1px solid #68b524; */
+    background-color: #0e0e0e;
+    /* position: absolute; */
+    padding: 0 0 40px 0;
+    /* flex: 1; */
+    /* width: 100vw; */
+    justify-self: center;
+    z-index: 20;
+    /* height: 120px; */
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#conversation_con {
+    color: #ffffffc9;
+    /* border: 5px solid #ff1313; */
+    z-index: 0;
+    flex: 1;
+    /* padding: 0 20vw; */
+    background-color: #0e0e0e;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0 12vw;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    font-size: 14px;
+}
+
+#conversation_con a {
+    color: inherit;
+    text-decoration: underline dotted;
+}
+
+.user {
+    background-color: #000000;
+    align-self: flex-end;
+    border-radius: 20px;
+    margin: 20px 0 20px 94px;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    /* border: 1px solid #ffffff2b; */
+    padding: 10px 15px;
+    /* font-size: 16px; */
+
+}
+
+.user p {
+    all: unset;
+
+}
+
+.model {
+    background-color: inherit;
+    line-height: 1.8;
+    margin: 20px 0 20px 0;
+    align-self: flex-start;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* flex: 1; */
+    width: 100%;
+    /* min-height: 55vh; */
+
+    /* font-size: 16px; */
+
+}
+
+
+.thoughts {
+    all: unset;
+    color: #ffffff87;
+    font-size: 14px;
+
+
+
+}
+
+.thoughts p {
+    border-left: 2px solid #ffffff00;
+    transition: 100ms;
+    padding: 0 15px;
+    margin: 10 35px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* .thoughts p:hover{
+    border-left: 2px solid #ffffff11;
+    color: #ffffffb8;
+} */
+
+.thoughts summary {
+    margin: 5px;
+}
+
+
+.thought-content {
+    /* border-left: 2px solid #ffffff11; */
+    padding: 10px 0;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to bottom, transparent -3%, black 24%, black 80%, transparent 100%);
+
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.thought-container {
+    border-top: 2px solid #ffffff05;
+    border-radius: 20px 20px 0 0;
+    /* border-bottom: none; */
+
+}
+
+
+.search {
+    all: unset;
+    color: #ffffff87;
+    font-size: 14px;
+    /* border: 1px solid #fff; */
+
+}
+
+.search p {
+    /* transition: 100ms; */
+    padding: 7px 100px 4px 16px;
+    margin: 0 10px 10px 10px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    background: #ffffff03;
+    border-radius: 14px;
+    
+}
+.search p:hover{
+    background-color: #ffffff05;
+    color: #ffffffb8;
+}
+
+.search-container a {
+    all: unset;
+
+}
+
+.search summary {
+    margin: 5px;
+}
+
+.search-content {
+    /* border-left: 2px solid #ffffff11; */
+    padding: 10px 0;
+    max-height: 150px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to bottom, transparent -3%, black 24%, black 80%, transparent 100%);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.search-container {
+    /* margin: 0 15px; */
+    border-top: 2px solid #ffffff05;
+    border-radius: 20px 20px 0 0;
+    /* border-bottom: none; */
+}
+
+.response {
+    margin-top: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 1. Global Opt-In: Allows height to animate smoothly to "auto" */
+:root {
+    interpolate-size: allow-keywords;
+}
+
+/* 2. Style the Details Container */
+details {
+    overflow: clip;
+    /* Prevents text from spilling out during animation */
+    height: 3rem;
+    /* Matches the height of your summary box */
+    transition: height 0.3s ease-in;
+    /* Animates container expansion */
+}
+
+details[open] {
+    height: auto;
+    /* Modern CSS interpolates this from 3rem to auto */
+}
+
+/* 3. Style the Content Container (Requires Chrome 131+, Safari 18.2+) */
+details::details-content {
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+details[open]::details-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 4. Smoothly Rotate the Custom Icon */
+summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    /* Removes default triangle arrow */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    /* Old Safari fix */
+}
+
+summary::before {
+    content: '';
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+    /* Smooth rotation transition */
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+    /* Rotates icon downward when opened */
+}
+
+.source {
+    transition: 250ms;
+
+}
+
+.source:hover {
+    color: #5686fe;
+}
+
+#new_chat_comment {
+    /* border: 2px solid gold; */
+    color: #191919;
+    z-index: 0;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
+
+#new_chat_comment p {
+    font-size: 30px;
+}
+
+.status-indicator {
+    /* font-family: sans-serif;
+    font-weight: 700;
+    font-size: 10px; */
+    background: linear-gradient(to right, #ffffff, #1f1f1f, #ffffff, #ffffff);
+    background-size: 200% auto;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 2s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+        /* Slides the background completely horizontally */
+    }
+}
+
+.hide-element {
+    display: none;
+}
+
