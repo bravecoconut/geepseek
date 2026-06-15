@@ -26,10 +26,10 @@ pip install -r requirements.txt
 
 ```bash
 # Initialize the Inference and Agentic Controller
-cd my_deepseek
+cd GeepSeek
 python app/server/server.py
 
 # Initialize the Presentation View-Controller
-cd my_deepseek
+cd GeepSeek
 python app/client/client.py
 ```

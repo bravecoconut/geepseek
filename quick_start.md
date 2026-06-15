@@ -61,13 +61,13 @@ pip install -r requirements.txt
 
 Instantiate Inference Layer:
 ```bash
-cd my_deepseek
+cd GeepSeek
 python app/server/server.py
 ```
 
 Instantiate Presentation Layer:
 ```bash
-cd my_deepseek
+cd GeepSeek
 python app/client/client.py
 ```
 
