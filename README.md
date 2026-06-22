@@ -57,7 +57,3 @@ Open [http://127.0.0.1:5001/chat/new](http://127.0.0.1:5001/chat/new) in your br
 ![Session sidebar](assets/127.0.0.1_5001_chat_S20260623015752524927(6).png)
 ![Search and sources](assets/127.0.0.1_5001_chat_S20260623015752524927.png)
 ![Streaming response](assets/127.0.0.1_5001_chat_S20260623015752524927(1).png)
-
-## License
-
-See the repository for license terms.
